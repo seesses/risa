@@ -9,7 +9,7 @@ import com.ll.risa_second.navigation.AlarmFragment
 import com.ll.risa_second.navigation.DetailViewFragment
 import com.ll.risa_second.navigation.GridFragment
 import com.ll.risa_second.navigation.UserFragment
-import kotlinx.android.synthetic.main.activity_isfj.*
+import kotlinx.android.synthetic.main.activity_estj.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 

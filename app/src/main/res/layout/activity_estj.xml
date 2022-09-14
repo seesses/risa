@@ -14,10 +14,10 @@
 
     <Button
         android:id="@+id/mButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="화면전환 - ISFJ"
-        android:textSize="50dp"/>
+        android:layout_width="386dp"
+        android:layout_height="133dp"
+        android:text="화면전환 - ESTJ"
+        android:textSize="50dp" />
 
 
 </RelativeLayout>
