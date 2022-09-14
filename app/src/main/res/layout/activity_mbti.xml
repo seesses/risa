@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#FFF0F0"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_mbti"
+        android:gravity="center"
+        android:text="MBTI를 선택하세요!"
+        android:textAlignment="center"
+        android:textColor="#CD0000"
+        android:textSize="30dp" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:layout_weight="5"
+            android:background="@drawable/btn_white"
+            android:text="ESTJ"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24dp">
+
+        </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="5"
+            android:background="@drawable/btn_white"
+            android:text="ISTJ"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24dp">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="160dp"
+        android:weightSum="10">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:background="@drawable/btn_white"
+            android:text="ESTP"
+            android:layout_marginRight="30dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24dp">
+
+        </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:background="@drawable/btn_white"
+            android:text="ISTP"
+            android:layout_marginLeft="30dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24dp">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="230dp"
+        android:weightSum="10">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:background="@drawable/btn_white"
+            android:text="ESFJ"
+            android:layout_marginRight="30dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24dp">
+
+        </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:background="@drawable/btn_white"
+            android:text="ISFJ"
+            android:layout_marginLeft="30dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24dp">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:layout_weight="5"
+            android:background="@drawable/btn_white"
+            android:text="ESFP"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24dp">
+
+        </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="5"
+            android:background="@drawable/btn_white"
+            android:text="ISFP"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24dp">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="370dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:layout_weight="5"
+            android:background="@drawable/btn_white"
+            android:text="ENTJ"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24dp">
+
+        </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="5"
+            android:background="@drawable/btn_white"
+            android:text="INTJ"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24dp">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:layout_weight="5"
+            android:background="@drawable/btn_white"
+            android:text="ENTP"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24dp">
+
+        </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="5"
+            android:background="@drawable/btn_white"
+            android:text="INTP"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24dp">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="510dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:layout_weight="5"
+            android:background="@drawable/btn_white"
+            android:text="ENFJ"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24dp">
+
+        </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="5"
+            android:background="@drawable/btn_white"
+            android:text="INFJ"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24dp">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="580dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:layout_weight="5"
+            android:background="@drawable/btn_white"
+            android:text="ENFP"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24dp">
+
+        </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="5"
+            android:background="@drawable/btn_white"
+            android:text="INFP"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24dp">
+
+        </Button>
+
+    </LinearLayout>
+
+</RelativeLayout>
