@@ -7,16 +7,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/white"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp"
+
     tools:context=".MainActivity">
 
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="35dp">
+        android:layout_height="50dp">
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -24,12 +22,10 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
+                android:layout_height="match_parent"
                 android:layout_marginEnd="0dp"
                 android:layout_marginBottom="0dp"
-                android:src="@drawable/btn_logo" />
+                android:src="@drawable/btn_logo"/>
         </RelativeLayout>
 
     </androidx.appcompat.widget.Toolbar>
@@ -52,13 +48,16 @@
         android:layout_below="@+id/toolbar_division">
 
     </FrameLayout>
+
     <LinearLayout
         android:id="@+id/nav_division"
-        android:background="@color/colorPink"
-        android:orientation="horizontal"
-        android:layout_above="@+id/bottom_navigation"
         android:layout_width="match_parent"
-        android:layout_height="1dp">
+        android:layout_height="1dp"
+        android:layout_above="@+id/bottom_navigation"
+        android:background="@color/colorPink"
+        android:orientation="horizontal">
+
+
     </LinearLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

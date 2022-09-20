@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-    <resources>
+<resources>
 
     <string name="app_name">risa_second</string>
 
@@ -38,7 +38,7 @@
 
     <string name="home">home</string>
 
-    <string name="search">Search</string>
+    <string name="mbti">Search</string>
 
     <string name="gallery">Gallery</string>
 
@@ -88,6 +88,7 @@
 
     <string name="upload_fail">Upload fail</string>
 
+
     <!-- Toolbar -->
 
 
@@ -96,8 +97,8 @@
     <!-- etc -->
 
 
-    <item name="visible" type="id"/>
+    <item name="visible" type="id" />
 
-    <item name="masked" type="id"/>
+    <item name="masked" type="id" />
 
 </resources>

@@ -6,7 +6,7 @@
 
 
 
-    <style parent="Theme.MaterialComponents.Light.NoActionBar" name="Theme.Risa_second.">
+    <style parent="Base.Theme.AppCompat.Light.DarkActionBar" name="Theme.Risa_second.">
 
     <!-- Primary brand color. -->
 

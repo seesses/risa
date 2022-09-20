@@ -1,9 +1,14 @@
 package com.ll.risa_second
 
+import android.Manifest.permission.READ_EXTERNAL_STORAGE
 import android.content.Intent
+import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.view.MenuItem
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.ll.risa_second.navigation.AlarmFragment
 import com.ll.risa_second.navigation.DetailViewFragment
@@ -11,7 +16,6 @@ import com.ll.risa_second.navigation.GridFragment
 import com.ll.risa_second.navigation.UserFragment
 import kotlinx.android.synthetic.main.activity_estj.*
 import kotlinx.android.synthetic.main.activity_main.*
-
 
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,7 +33,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
                     .replace(R.id.main_content, detailViewFragment).commit()
                 return true
             }
-            R.id.action_search -> {
+            R.id.action_mbti -> {
                 var gridFragment = GridFragment()
                 supportFragmentManager.beginTransaction().replace(R.id.main_content, gridFragment)
                     .commit()
@@ -37,6 +41,9 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
             }
             R.id.action_photo -> {
 
+                if(ContextCompat.checkSelfPermission(this,android.Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED){
+                    startActivity(Intent(this,AddPhotoActivity ::class.java))
+                }
                 return true
             }
             R.id.action_favorite_alarm -> {
@@ -53,5 +60,12 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
             }
         }
         return false
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+        bottom_navigation.setOnNavigationItemSelectedListener(this)
+        ActivityCompat.requestPermissions(this, arrayOf(android.Manifest.permission.READ_EXTERNAL_STORAGE),1)
     }
 }
