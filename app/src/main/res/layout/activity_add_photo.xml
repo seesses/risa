@@ -31,10 +31,9 @@
 
     <ImageView
         android:id="@+id/addphoto_image"
+        android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_below="@+id/toolbar_division"
-        android:layout_margine="8dp"
-        android:layout_width="100dp" />
+        android:layout_below="@+id/toolbar_division"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/editText"

@@ -1,6 +1,5 @@
 package com.ll.risa_second
 
-import android.Manifest.permission.READ_EXTERNAL_STORAGE
 import android.content.Intent
 import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
@@ -10,11 +9,11 @@ import android.view.MenuItem
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.auth.FirebaseAuth
 import com.ll.risa_second.navigation.AlarmFragment
 import com.ll.risa_second.navigation.DetailViewFragment
 import com.ll.risa_second.navigation.GridFragment
 import com.ll.risa_second.navigation.UserFragment
-import kotlinx.android.synthetic.main.activity_estj.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
@@ -54,8 +53,11 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
             }
             R.id.action_account -> {
                 var userFragment = UserFragment()
-                supportFragmentManager.beginTransaction()
-                    .replace(R.id.main_content, userFragment).commit()
+                var bundle = Bundle()
+                var uid = FirebaseAuth.getInstance().currentUser?.uid
+                bundle.putString("destinationUid", uid)
+                userFragment.arguments = bundle
+                supportFragmentManager.beginTransaction().replace(R.id.main_content, userFragment).commit()
                 return true
             }
         }
@@ -67,5 +69,8 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         setContentView(R.layout.activity_main)
         bottom_navigation.setOnNavigationItemSelectedListener(this)
         ActivityCompat.requestPermissions(this, arrayOf(android.Manifest.permission.READ_EXTERNAL_STORAGE),1)
+
+        //set default screen
+        bottom_navigation.selectedItemId = R.id.action_home
     }
 }
